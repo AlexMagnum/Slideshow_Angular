@@ -1,0 +1,136 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+body{
+	background: grey url(../Img/937243.png);
+}
+
+.wrapper{
+	margin-top: 50px;
+	max-width: 100%;
+}
+
+
+.slide{
+	position: relative;
+	margin: auto;
+	width: 50%;	
+	border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	border: 3px solid #fff;
+}
+
+.slide:hover{
+	-webkit-box-shadow: 0px 0px 15px 8px rgba(217,7,7,1);
+	-moz-box-shadow: 0px 0px 15px 8px rgba(217,7,7,1);
+	box-shadow: 0px 0px 15px 8px rgba(217,7,7,1);
+}
+
+.slide a{
+	outline: none;
+	cursor: default;
+}
+
+.slide img{
+	max-width: 100%;
+	height: auto;
+	border-radius: 12px 12px 0px 0px;
+	-moz-border-radius: 12px 12px 0px 0px;
+	-webkit-border-radius: 12px 12px 0px 0px;
+	border-bottom: 2px solid #fff;
+	vertical-align: bottom;
+}
+
+.counter, .caption{
+	position: absolute;
+	color: #fff;
+	display: inline-block;
+	font-size: 1.125em;
+	font-weight: bolder;
+}
+
+.counter{
+	top: 2%;
+	left: 3%;
+}
+
+.prev, .next{
+	position: absolute;
+	height: 15%;
+	width: 6.5%;
+	top:42.5%;
+	color: #fff;
+	background: rgba(0,0,0, 0);
+	border: none;
+	font-size: 2em;
+	cursor: pointer;
+	transition: background 1s;
+}
+
+.prev:hover, .next:hover{
+	background: rgba(0,0,0, 1);
+}
+
+.prev{
+	left: 0;
+}
+
+.next{
+	right: 0;
+}
+
+.anchorCap{
+	position: relative;
+
+}
+
+.caption{
+	bottom: 0;
+	left: 0;
+	margin-bottom: 2%;
+	width: 100%;
+}
+
+.imgButton{
+	background: #867b79;
+	border-radius: 0px 0px 12px 12px;
+	-moz-border-radius: 0px 0px 12px 12px;
+	-webkit-border-radius: 0px 0px 12px 12px;
+}	
+
+.imgButton button{
+	width: 15px;
+	height: 15px;
+	margin: 5px;
+	border-radius: 50%;
+	cursor: pointer;
+	border: none;
+}
+
+.imgButton button:hover{
+	-webkit-box-shadow: inset 0px 0px 3px 3px rgba(217,7,7,1);
+	-moz-box-shadow: inset 0px 0px 3px 3px rgba(217,7,7,1);
+	box-shadow: inset 0px 0px 3px 3px rgba(217,7,7,1);
+}
+
+.clicked{
+	background: maroon;
+}
+
+button.clicked:hover{
+
+	-webkit-box-shadow: inset 0px 0px 3px 3px #fff;
+	-moz-box-shadow: inset 0px 0px 3px 3px #fff;
+	box-shadow: inset 0px 0px 3px 3px #fff;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+	.slide{
+		width: 500px;
+		height: auto;
+	}
+} 

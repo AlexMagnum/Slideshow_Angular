@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Slideshow with AngularJS</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="CSS/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>		
+</head>
+<body>
+
+	<div class="wrapper">
+		<div ng-app="myApp" ng-controller="myCtrl" class="slide">			
+			<span class="counter">{{curr}}/{{4}}</span>
+			<a href="" class="fade"><img ng-src="{{currValue}}"></img></a>
+			<button class="prev" ng-click="prevSlide()">&#10094;</button>
+			<button class="next" ng-click="nextSlide()">&#10095;</button>
+			<div class="anchorCap">
+				<div class="caption">{{currText}}</div>
+			</div>
+			<div class="imgButton">
+				<button ng-class="butChange[0]" ng-click="butClickChange(1)"></button>
+				<button ng-class="butChange[1]" ng-click="butClickChange(2)"></button>
+				<button ng-class="butChange[2]" ng-click="butClickChange(3)"></button>
+				<button ng-class="butChange[3]" ng-click="butClickChange(4)"></button>
+			</div>
+		</div>
+	</div>
+
+	<script src="JS/module.js" async></script>
+</body>
+</html>
